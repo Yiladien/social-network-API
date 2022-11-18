@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "mongoose": "^6.7.2",
+    "y": "^0.3.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "social-network-api",
+  "description": "",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yiladien/social-network-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yiladien/social-network-API/issues"
+  },
+  "homepage": "https://github.com/Yiladien/social-network-API#readme"
+}
