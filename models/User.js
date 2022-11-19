@@ -13,6 +13,13 @@ const UserSchema = new Schema(
       required: true,
       unique: true,
       trim: true,
+      validate: {
+        validator: function (v) {
+          return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(v);
+        },
+        message: (emailInput) =>
+          `${emailInput.value} is not a valid email format.`,
+      },
     },
     thoughts: [
       {

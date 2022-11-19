@@ -1,5 +1,3 @@
-import dateFormat, { masks } from "dateformat";
-
 const { Schema, model } = require("mongoose");
 
 const ReactionSchema = new Schema(
@@ -13,8 +11,11 @@ const ReactionSchema = new Schema(
       type: String,
       required: true,
       trim: true,
-      minLength: 1,
-      maxLength: 280,
+      minLength: [1, "No text provided"],
+      maxLength: [
+        280,
+        "Too many characters ({VALUE}). Maximum character length is 280.",
+      ],
     },
     username: {
       type: String,
@@ -39,8 +40,11 @@ const ThoughtsSchema = new Schema(
     thoughtText: {
       type: String,
       required: true,
-      minLength: 1,
-      maxLength: 280,
+      minLength: [1, "No text provided"],
+      maxLength: [
+        280,
+        "Too many characters ({VALUE}). Maximum character length is 280.",
+      ],
     },
     createdAt: {
       type: Date,
