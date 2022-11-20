@@ -1,9 +1,7 @@
 {
   "dependencies": {
-    "dateformat": "^5.0.3",
     "express": "^4.18.2",
-    "mongoose": "^6.7.2",
-    "y": "^0.3.2"
+    "mongoose": "^6.7.2"
   },
   "scripts": {
     "start": "node server.js"
@@ -22,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/Yiladien/social-network-API/issues"
   },
-  "homepage": "https://github.com/Yiladien/social-network-API#readme"
+  "homepage": "https://github.com/Yiladien/social-network-API#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
