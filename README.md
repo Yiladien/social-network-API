@@ -10,6 +10,12 @@ The Social-Networking-API is a ready to use API for a Social Networking applicat
 
 ---
 
+## Video Walkthrough
+
+https://drive.google.com/file/d/1i1c8Hnkp0YKyNG9YoHshM4-976fnWZA_/view
+
+---
+
 ## Table of Contents
 
 - [Installation](#installation)
